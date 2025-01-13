@@ -1,0 +1,22 @@
+.chbi-jpn-nav {
+  height: 83px;
+  width: 95vw;
+  background-color: #000814;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .chbi-nav-text {
+    color: #FFC300;
+    font-size: 1.5rem;
+    align-items: center;
+    display: flex;
+  }
+
+  svg {
+    height: 40px;
+    width: 40px;
+    color: #FFC300;
+  }
+}
