@@ -1,0 +1,18 @@
+.chbi-train-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  .chbi-train-circle {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+  }
+
+  .chbi-train-line {
+    height: 17px;
+    width: 182px;
+  }
+}
