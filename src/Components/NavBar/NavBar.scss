@@ -19,4 +19,26 @@
     width: 40px;
     color: #FFC300;
   }
+
+  .chbi-nav-text-display {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .chbi-jpn-nav {
+    display: flex;
+    justify-content: flex-start;
+
+    svg {
+      display: none;
+    }
+
+    .chbi-nav-text-display {
+      display: flex;
+      color: #FFC300;
+      font-size: 1.5rem;
+    }
+  }
+
 }
