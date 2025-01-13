@@ -6,6 +6,7 @@ import TrainLines from './Components/TrainLines/TrainLines'
 import { trainLines } from './data/train-lines'
 import { statsData } from './data/statsData';
 import MenuCard from './Components/MenuCard/MenuCard'
+import KaraokeCard from './Components/KaraokeCard/KaraokeCard'
 
 function App() {
 
@@ -27,7 +28,9 @@ function App() {
           ))}
         </div>
         <div>
-          <MenuCard/>
+          {/* <MenuCard/>
+           */}
+          <KaraokeCard/>
         </div>
       </div>
     </>
