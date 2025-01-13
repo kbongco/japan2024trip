@@ -1,0 +1,32 @@
+.chbi-menu-card-container {
+  height: 720px;
+  width: 340px;
+  border-radius: 40px;
+  background-color: #001D3D;
+
+  .chbi-card-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .chbi-menu-title {
+      font-size: 3rem;
+    }
+
+    .chbi-menu-items {
+      .chbi-menu-item-container {
+        display: flex;
+      }
+
+      .chbi-menu-food-icon {
+        font-size: 3rem;
+      }
+    }
+
+    .chbi-menu-item-macros {
+      .chbi-header-macros {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

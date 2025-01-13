@@ -5,6 +5,7 @@ import ProgressBarComponent from './Components/ProgressBar/ProgressBarComponent'
 import TrainLines from './Components/TrainLines/TrainLines'
 import { trainLines } from './data/train-lines'
 import { statsData } from './data/statsData';
+import MenuCard from './Components/MenuCard/MenuCard'
 
 function App() {
 
@@ -24,7 +25,9 @@ function App() {
             <Card key={stat.id} icon={stat.icon} title={stat.title} description={stat.description}
             value ={stat.value}/>
           ))}
-          {/* <Card/> */}
+        </div>
+        <div>
+          <MenuCard/>
         </div>
       </div>
     </>
