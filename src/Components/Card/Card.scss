@@ -1,0 +1,25 @@
+.chbi-card-container {
+  height: 134px;
+  background-color: #001D3D;
+  width: 180px;
+  border-radius: 20%;
+
+  .chbi-card-icon-container {
+    display: flex;
+    padding-top: 16px;
+    flex-direction: column;
+    align-items: center;
+
+    .chbi-card-text {
+      text-align: center;
+    }
+
+    .chbi-card-icon {
+      font-size: 1.3rem;
+    }
+  }
+
+  .chbi-card-subtext {
+    text-align: center;
+  }
+}
