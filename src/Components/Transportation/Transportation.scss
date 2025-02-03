@@ -1,0 +1,50 @@
+.chbi-transportation-container {
+  margin-top: 2rem;
+  width: 80%;
+
+  @media(min-width: 768px) {
+    width: 100%;
+  }
+
+  .chbi-transportation-header {
+    font-size: 2rem;
+  }
+
+  .chbi-transportation-links {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: end;
+
+    @media(min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .chbi-transportation-train-lines-mobile {
+    @media(min-width: 768px){
+      display:none;
+    }
+  }
+
+  .chbi-transportation-city {
+    font-size: 2rem;
+
+    @media(min-width: 768px){
+      display: none;
+    }
+  }
+
+  .chbi-transportation-city-container {
+    display: none;
+
+    @media(min-width: 1024px) {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-evenly;
+    }
+
+    .chbi-transportation-city-name {
+      font-size: 2.5rem;
+    }
+  }
+}

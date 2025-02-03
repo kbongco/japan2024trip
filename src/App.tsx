@@ -1,6 +1,7 @@
 import './App.css'
 import BasicStats from './Components/BasicStats/BasicStats'
 import NavBar from './Components/NavBar/NavBar'
+import Transportation from './Components/Transportation/Transportation'
 import Welcome from './Components/Welcome/Welcome'
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <div className='chbi-container'>
         <NavBar />
         <Welcome />
-        <BasicStats/>
+        <BasicStats />
+        <Transportation/>
       </div>
     </>
   )
