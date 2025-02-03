@@ -1,0 +1,80 @@
+.chbi-test-container {
+  display: flex;
+  flex-direction: column;
+
+  .chbi-welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  .chbi-welcome-pic {
+    max-width: 345px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .chbi-welcome-txt-parent {
+    display: flex;
+    justify-content: center;
+
+    .chbi-welcome-txt-container {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+
+      .chbi-welcome {
+        font-size: 2rem;
+      }
+
+      .chbi-description-txt {
+        .chbi-description {
+          font-size: 1.5rem;
+        }
+      }
+
+      .chbi-contact-icons-container {
+        display: flex;
+        justify-content: center;
+
+        svg {
+          height: 60px;
+          width: 60px;
+          color: #FFC300;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .chbi-test-container {
+    display: flex;
+    flex-direction: row;
+
+    .chbi-welcome-pic {
+      max-width: 600px;
+      height: 600px;
+    }
+
+    .chbi-welcome-txt-parent {
+      width: 100%;
+      .chbi-welcome-txt-container {
+        .chbi-welcome-txt {
+          .chbi-welcome {
+            font-size: 3.5rem;
+          }
+
+          .chbi-description-txt {
+            .chbi-description {
+              font-size: 1.75rem;
+              width: 30ch;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.chbi-karaoke-card-container {
+  background-color: #001D3D;
+  height: 242px;
+  width: 364px;
+  border-radius: 30px;
+
+  .chbi-karaoke-card-title {
+    .chbi-karaoke-title {
+      font-size: 2rem;
+      text-align: center;
+      padding-top: 16px;
+      color: pink
+    }
+
+    // .chbi-karaoke-text {
+    //   position: relative;
+    //   white-space: nowrap;
+    //   color: lightblue;
+    //   text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+    //   font-size: 1.5rem;
+    //   /* Adjust the font size as needed */
+    //   display: inline-block;
+    //   /* Ensure the container fits the text properly */
+    //   width: 100%;
+    //   /* Ensure full width for the text container */
+    //   overflow: hidden;
+    //   /* Hide overflowing text initially */
+    // }
+
+    .chbi-karaoke-text::after {
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: red;
+      white-space: nowrap;
+      /* Prevent text from wrapping */
+      text-shadow: 0 0 3px rgba(255, 255, 255, 1);
+      display: inline-block;
+      /* Ensure it wraps the text */
+      width: 0;
+      /* Start with no width */
+      animation: run-text 5s infinite linear;
+      /* Adjust the timing of the animation */
+    }
+
+    @keyframes run-text {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+        /* Reveal text from left to right */
+      }
+    }
+  }
+}
