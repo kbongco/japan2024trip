@@ -81,25 +81,25 @@ export const trainLines = [
     id: "line_014",
     name: "Shinkansen",
     color: "#E60012",
-    city: "Nationwide"
+    city: "Other"
   },
   {
     id: "line_015",
     name: "Hakone-Yumoto Line",
     color: "#FFB700", 
-    city: "Hakone"
+    city: "Other"
   },
   {
     id: "line_016",
     name: "JR Yokohama Line",
     color: "#53B8A8", 
-    city: "Yokohama"
+    city: "Other"
   },
   {
     id: "line_017",
     name: "Keihin Tohoku Line",
     color: "#009C9D", 
-    city: "Tokyo/Yokohama"
+    city: "Other"
   }
 ];
 
