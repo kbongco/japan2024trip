@@ -37,13 +37,25 @@
 
       .chbi-contact-icons-container {
         display: flex;
-        justify-content: center;
-
-        svg {
-          height: 60px;
-          width: 60px;
-          color: #FFC300;
-        }
+        flex-direction: row;  // Make icons appear in a row
+        justify-content: center; // Center horizontally
+        align-items: center; // Center vertically
+        gap: 20px; // Add spacing between icons
+        width: 100%; // Ensure it takes full width for proper centering
+        height: 100px; // Adjust height if needed
+      }
+      
+      .chbi-github-icon-container,
+      .chbi-linkedin-icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center; // Ensure the icon inside is centered
+      }
+      
+      svg {
+        height: 60px;
+        width: 60px;
+        color: #FFC300;
       }
     }
   }

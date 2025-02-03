@@ -29,7 +29,6 @@ export default function Welcome() {
               </div>
             </div>
             <div className='chbi-contact-icons-container'>
-              <div>
               <div className='chbi-github-icon-container'>
                 <a href='http://github.com/kbongco'>
                   <FontAwesomeIcon icon={faGithubAlt} />
@@ -38,9 +37,8 @@ export default function Welcome() {
               <div className='chbi-linkedin-icon-container'>
                 <a href='https://www.linkedin.com/in/kathleen-bongco-11843197/'>
                   <FontAwesomeIcon icon={faLinkedin} />
-                  </a>
-                </div>
-                </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
