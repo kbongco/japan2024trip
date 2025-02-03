@@ -1,0 +1,18 @@
+.chbi-transportation-container {
+  margin-top: 2rem;
+  width: 80%;
+
+  .chbi-transportation-header {
+    font-size: 2rem;
+  }
+
+  .chbi-transportation-links {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: end;
+  }
+
+  .chbi-transportation-city {
+    font-size: 2rem;
+  }
+}
