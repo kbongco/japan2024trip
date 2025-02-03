@@ -1,0 +1,67 @@
+.basic-stats-container {
+  margin-top: 1rem;
+  width: 70%;
+
+  .basic-stats-texts {
+    @media(min-width: 1024px) {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      justify-content: space-between; 
+      width: 100%;
+    }
+  }
+
+  .basic-stats-header {
+    font-size: 2rem;
+
+    @media(min-width: 1024px) {
+      justify-self: start;
+      font-size: 3rem;
+    }
+  }
+
+  .basic-stats-sub-text {
+    margin-bottom: 1rem;
+
+    @media(min-width:1024px) {
+      justify-self: end; 
+      text-align: right;
+      font-size: 3rem;
+    }
+
+    .basic-stats-exchange-text {
+      font-size: 2rem;
+    }
+
+    .basic-stats-exchange-rate {
+      font-size: 1.5rem;
+
+      @media(min-width:1024px) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .stats-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 1rem; 
+    }
+
+    @media (min-width: 1440px) {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1rem;
+    }
+  }
+
+  .stats-inner-card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+}
