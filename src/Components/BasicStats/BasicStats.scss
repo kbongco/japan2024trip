@@ -1,0 +1,28 @@
+// .stats-card-container {
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+//   gap: 1rem;
+// }
+
+.basic-stats-container {
+  margin-top: 1rem;
+  .basic-stats-header {
+    font-size: 2rem;
+  }
+
+  .basic-stats-sub-text{
+    margin-bottom: 1rem;
+    .basic-stats-exchange-text {
+      font-size: 2rem;
+    }
+    .basic-stats-exchange-rate {
+      font-size: 1.5rem;
+    }
+  }
+
+  .stats-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
