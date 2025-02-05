@@ -1,44 +1,114 @@
+// .chbi-jpn-nav {
+//   height: 83px;
+//   width: 95vw;
+//   background-color: #000814;
+//   border-radius: 20px;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+
+//   .chbi-nav-text {
+//     color: #FFC300;
+//     font-size: 1.5rem;
+//     align-items: center;
+//     display: flex;
+//   }
+
+//   svg {
+//     height: 40px;
+//     width: 40px;
+//     color: #FFC300;
+//   }
+
+//   .chbi-nav-text-display {
+//     display: none;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   .chbi-jpn-nav {
+//     display: flex;
+//     justify-content: flex-start;
+
+//     svg {
+//       display: none;
+//     }
+
+//     .chbi-nav-text-display {
+//       display: flex;
+//       color: #FFC300;
+//       font-size: 1.5rem;
+//     }
+//   }
+
+// }
+
 .chbi-jpn-nav {
-  height: 83px;
-  width: 95vw;
-  background-color: #000814;
-  border-radius: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  color: #FFC300;
+  position: relative;
+}
 
-  .chbi-nav-text {
-    color: #FFC300;
-    font-size: 1.5rem;
-    align-items: center;
-    display: flex;
-  }
+.chbi-nav-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
-  svg {
-    height: 40px;
-    width: 40px;
-    color: #FFC300;
-  }
+.chbi-nav-text-display {
+  display: flex;
+  gap: 2rem;
 
-  .chbi-nav-text-display {
-    display: none;
+  .chbi-nav-text-desktop {
+    font-size: 1.2rem;
+    cursor: pointer;
   }
 }
 
-@media (min-width: 768px) {
-  .chbi-jpn-nav {
-    display: flex;
-    justify-content: flex-start;
+/* Hamburger Icon */
+.chbi-hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
 
-    svg {
-      display: none;
-    }
+/* Mobile Menu */
+.chbi-nav-mobile-menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #1a1a1a;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-top: 1px solid #444;
+}
 
-    .chbi-nav-text-display {
-      display: flex;
-      color: #FFC300;
-      font-size: 1.5rem;
-    }
+.chbi-nav-mobile-menu p {
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.chbi-nav-mobile-menu p:hover {
+  background-color: #333;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .chbi-nav-text-display {
+    display: none; /* Hide desktop menu on mobile */
   }
 
+  .chbi-hamburger {
+    display: block; /* Show hamburger menu on mobile */
+  }
 }
