@@ -1,48 +1,3 @@
-// .chbi-jpn-nav {
-//   height: 83px;
-//   width: 95vw;
-//   background-color: #000814;
-//   border-radius: 20px;
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-
-//   .chbi-nav-text {
-//     color: #FFC300;
-//     font-size: 1.5rem;
-//     align-items: center;
-//     display: flex;
-//   }
-
-//   svg {
-//     height: 40px;
-//     width: 40px;
-//     color: #FFC300;
-//   }
-
-//   .chbi-nav-text-display {
-//     display: none;
-//   }
-// }
-
-// @media (min-width: 768px) {
-//   .chbi-jpn-nav {
-//     display: flex;
-//     justify-content: flex-start;
-
-//     svg {
-//       display: none;
-//     }
-
-//     .chbi-nav-text-display {
-//       display: flex;
-//       color: #FFC300;
-//       font-size: 1.5rem;
-//     }
-//   }
-
-// }
-
 .chbi-jpn-nav {
   display: flex;
   justify-content: space-between;
@@ -51,6 +6,27 @@
   background-color: #1a1a1a;
   color: #FFC300;
   position: relative;
+  border-radius: 10px;
+
+  @media(min-width: 768px){
+    max-width: 90%;
+  }
+}
+
+.chbi-jpn-nav {
+  display: flex;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  color: #FFC300;
+  position: relative;
+  border-radius: 10px;
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  
+  @media(min-width: 768px) {
+    max-width: 90%; 
+  }
 }
 
 .chbi-nav-text {
@@ -68,14 +44,14 @@
   }
 }
 
-/* Hamburger Icon */
+
 .chbi-hamburger {
   display: none;
   font-size: 2rem;
   cursor: pointer;
 }
 
-/* Mobile Menu */
+
 .chbi-nav-mobile-menu {
   position: absolute;
   top: 60px;
@@ -84,7 +60,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
   padding: 1rem;
   border-top: 1px solid #444;
@@ -102,13 +77,13 @@
   background-color: #333;
 }
 
-/* Responsive Styling */
+
 @media (max-width: 768px) {
   .chbi-nav-text-display {
-    display: none; /* Hide desktop menu on mobile */
+    display: none;
   }
 
   .chbi-hamburger {
-    display: block; /* Show hamburger menu on mobile */
+    display: block; 
   }
 }

@@ -1,92 +1,105 @@
 .chbi-test-container {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
 
-  .chbi-welcome-container {
+.chbi-welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 24px;
+  width: 100%;
+}
+
+.chbi-welcome-pic {
+  max-width: 345px;
+  height: auto;
+  margin-bottom: 1rem;
+  margin-left: 0; 
+  margin-right: 2rem; 
+}
+
+.chbi-welcome-txt-parent {
+  display: flex;
+  justify-content: center;
+
+  .chbi-welcome-txt-container {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 24px;
-  }
+    width: 80%;
 
-  .chbi-welcome-pic {
-    max-width: 345px;
-    height: auto;
-    margin-bottom: 1rem;
-  }
+    .chbi-welcome {
+      font-size: 2rem;
+    }
 
-  .chbi-welcome-txt-parent {
-    display: flex;
-    justify-content: center;
+    .chbi-description-txt {
+      .chbi-description {
+        font-size: 1.5rem;
+      }
+    }
 
-    .chbi-welcome-txt-container {
-      align-items: flex-start;
+    .chbi-contact-icons-container {
       display: flex;
-      flex-direction: column;
-      width: 80%;
+      flex-direction: row;  
+      justify-content: center; 
+      align-items: center; 
+      gap: 20px; 
+      width: 100%; 
+      height: 100px; 
+    }
+    
+    .chbi-github-icon-container,
+    .chbi-linkedin-icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+    }
 
-      .chbi-welcome {
-        font-size: 2rem;
-      }
-
-      .chbi-description-txt {
-        .chbi-description {
-          font-size: 1.5rem;
-        }
-      }
-
-      .chbi-contact-icons-container {
-        display: flex;
-        flex-direction: row;  // Make icons appear in a row
-        justify-content: center; // Center horizontally
-        align-items: center; // Center vertically
-        gap: 20px; // Add spacing between icons
-        width: 100%; // Ensure it takes full width for proper centering
-        height: 100px; // Adjust height if needed
-      }
-      
-      .chbi-github-icon-container,
-      .chbi-linkedin-icon-container {
-        display: flex;
-        align-items: center;
-        justify-content: center; // Ensure the icon inside is centered
-      }
-      
-      svg {
-        height: 60px;
-        width: 60px;
-        color: #FFC300;
-      }
+    svg {
+      height: 60px;
+      width: 60px;
+      color: #FFC300;
     }
   }
 }
 
+
 @media(min-width: 768px) {
   .chbi-test-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 auto; 
+  }
 
-    .chbi-welcome-pic {
-      max-width: 600px;
-      height: 600px;
-    }
+  .chbi-welcome-container {
+    flex: 1;
+  }
 
-    .chbi-welcome-txt-parent {
-      width: 100%;
-      .chbi-welcome-txt-container {
-        .chbi-welcome-txt {
-          .chbi-welcome {
-            font-size: 3.5rem;
-          }
+  .chbi-welcome-pic {
+    max-width: 600px;
+    height: auto;  
+    margin-right: 2rem; 
+    margin-left: 0; 
+  }
 
-          .chbi-description-txt {
-            .chbi-description {
-              font-size: 1.75rem;
-              width: 30ch;
-            }
-          }
-        }
-      }
-    }
+  .chbi-welcome-txt-parent {
+    flex: 2;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    width: auto;
+  }
+
+  .chbi-welcome-txt-container {
+    align-items: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }

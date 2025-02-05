@@ -1,6 +1,7 @@
-// .chbi-funstuff-container {
-//   text-align: center;
-// }
+.chbi-funstuff-container {
+  width: 85%;
+  margin-top: 3rem;
+}
 
 .chbi-funstuff-header {
   font-size: 2.5rem;
@@ -16,17 +17,16 @@
   margin-bottom: 2rem;
 }
 
-/* Grid Layout for Fun Stuff */
 .chbi-fun-stuff-items {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .chbi-fun-stuff-item {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  /* Two-column layout */
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
@@ -49,23 +49,18 @@
   text-align: left;
 }
 
-/* Style for GIFs/Images */
 .chbi-fun-stuff-image {
-  // max-width: 100px;
   height: auto;
   border-radius: 8px;
 }
 
-/* Style for emojis */
 .chbi-fun-stuff-emoji {
   font-size: 2rem;
 }
 
-/* Mobile Layout */
 @media (max-width: 768px) {
   .chbi-fun-stuff-item {
     grid-template-columns: 1fr;
-    /* Stack content in one column */
     text-align: center;
   }
 }
