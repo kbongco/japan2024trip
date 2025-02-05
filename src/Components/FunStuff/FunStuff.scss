@@ -1,0 +1,71 @@
+// .chbi-funstuff-container {
+//   text-align: center;
+// }
+
+.chbi-funstuff-header {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+
+  @media(min-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+.chbi-funstuff-desc {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout for Fun Stuff */
+.chbi-fun-stuff-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.chbi-fun-stuff-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* Two-column layout */
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  max-width: 100ch;
+  border-bottom: 1px solid #ddd;
+}
+
+.chbi-fun-stuff-name-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+.chbi-fun-stuff-description {
+  text-align: left;
+}
+
+/* Style for GIFs/Images */
+.chbi-fun-stuff-image {
+  // max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Style for emojis */
+.chbi-fun-stuff-emoji {
+  font-size: 2rem;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .chbi-fun-stuff-item {
+    grid-template-columns: 1fr;
+    /* Stack content in one column */
+    text-align: center;
+  }
+}
