@@ -15,7 +15,7 @@ export default function NavBar() {
           icon={menuOpen ? faTimes : faBars} 
           className="chbi-hamburger" 
           onClick={() => setMenuOpen(!menuOpen)} 
-        />
+      />
 
         {/* Desktop Nav Items (Always visible on large screens) */}
         <div className="chbi-nav-text-display">
