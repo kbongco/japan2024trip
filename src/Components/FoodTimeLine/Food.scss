@@ -1,0 +1,79 @@
+.food-timeline-container {
+  width: 85%;
+  margin-top: 2.25rem;
+
+  @media(min-width: 768px) {
+    width: 80%;
+  }
+  .timeline-title {
+    font-size: 1.5rem;
+    width: 24ch;
+
+    @media(min-width: 768px){
+      width: 100%
+    }
+  }
+  .timeline {
+    display:flex;
+    .timeline-dot {
+      font-size: 1.5rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .meal-details {
+    p { 
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.food-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allow wrapping to prevent stretching */
+  margin-top: 1rem;
+}
+
+.food-card {
+  background: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 150px; /* Ensure a fixed width */
+  max-width: 100%; /* Prevent stretching */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-card img {
+  width: 80px; /* Smaller image */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  .food-items {
+    flex-direction: row; /* Align in a row */
+    justify-content: center;
+  }
+
+  .food-card {
+    width: 180px; /* Increase size on larger screens */
+  }
+
+  .food-card img {
+    width: 120px; /* Adjust image size */
+    height: 120px;
+  }
+}
